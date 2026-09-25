@@ -1,0 +1,124 @@
+.FashionBanner {
+  width: 100%;
+  min-height: 360px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.42) 45%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1600&q=85");
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.FashionBanner-content {
+  max-width: 500px;
+  padding: 50px;
+  color: #ffffff;
+}
+
+.FashionBanner-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.FashionBanner-content h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.FashionBanner-content p {
+  max-width: 380px;
+  margin: 18px 0 25px;
+  color: #f3f4f6;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.FashionBanner-button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.FashionBanner-button:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+.FashionBanner-button:active {
+  transform: translateY(0);
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .FashionBanner {
+    min-height: 320px;
+    margin-bottom: 35px;
+  }
+
+  .FashionBanner-content {
+    padding: 40px;
+  }
+
+  .FashionBanner-content h2 {
+    font-size: 40px;
+  }
+
+  .FashionBanner-content p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+  .FashionBanner {
+    min-height: 360px;
+    margin-bottom: 30px;
+    background-position: 65% center;
+    border-radius: 12px;
+  }
+
+  .FashionBanner-content {
+    padding: 30px 25px;
+  }
+
+  .FashionBanner-content h2 {
+    font-size: 34px;
+  }
+
+  .FashionBanner-content p {
+    font-size: 14px;
+    max-width: 280px;
+  }
+
+  .FashionBanner-button {
+    padding: 11px 20px;
+  }
+}

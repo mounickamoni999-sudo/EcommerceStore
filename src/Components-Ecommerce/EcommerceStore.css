@@ -1,0 +1,213 @@
+.EcommerceStore {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.EcommerceStore-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.EcommerceStore-brand h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.EcommerceStore-brand p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.EcommerceStore-cartBadge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.EcommerceStore-cartBadge strong {
+  min-width: 26px;
+  height: 26px;
+  padding: 0 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #111827;
+  border-radius: 50%;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.EcommerceStore-main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 50px 60px;
+  box-sizing: border-box;
+}
+
+.EcommerceStore-productsSection {
+  width: 100%;
+}
+
+.EcommerceStore-sectionHeader {
+  margin-bottom: 24px;
+}
+
+.EcommerceStore-sectionHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.EcommerceStore-sectionHeader p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.EcommerceStore-productGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.EcommerceStore-loading,
+.EcommerceStore-error {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.EcommerceStore-error {
+  color: #dc2626;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .EcommerceStore-header {
+    padding: 20px 30px;
+  }
+
+  .EcommerceStore-main {
+    padding: 35px 30px 50px;
+  }
+
+  .EcommerceStore-productGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Small Tablet */
+@media (max-width: 800px) {
+  .EcommerceStore-header {
+    padding: 18px 20px;
+  }
+
+  .EcommerceStore-brand h1 {
+    font-size: 24px;
+  }
+
+  .EcommerceStore-main {
+    padding: 30px 20px 45px;
+  }
+
+  .EcommerceStore-productGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+  .EcommerceStore-header {
+    padding: 16px;
+  }
+
+  .EcommerceStore-brand h1 {
+    font-size: 20px;
+  }
+
+  .EcommerceStore-brand p {
+    font-size: 12px;
+  }
+
+  .EcommerceStore-cartBadge {
+    padding: 8px 10px;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .EcommerceStore-cartBadge strong {
+    min-width: 23px;
+    height: 23px;
+    font-size: 12px;
+  }
+
+  .EcommerceStore-main {
+    padding: 25px 16px 40px;
+  }
+
+  .EcommerceStore-sectionHeader h2 {
+    font-size: 21px;
+  }
+
+  .EcommerceStore-productGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.EcommerceStore-cartButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.EcommerceStore-cartButton:hover {
+  background-color: #374151;
+}
+
+.EcommerceStore-cartButton strong {
+  min-width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #111827;
+  border-radius: 50%;
+  font-size: 13px;
+}
